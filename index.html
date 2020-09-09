@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fibonnacci Animations</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- INPUT VALUE COLUMN -->
+    <div id="variableColumn">
+        <div id="mainHeading">
+            <h1>FIBONACCI FUN</h1>
+            <h2>Apply Your Own Values</h2>
+        </div>
+        
+    <!-- BASE NUMBER -->
+    <div class ="variableBox">
+        <label for="baseNum">Base Number <drg-num>(1-10):</drg-num></label>
+        <input type="number" id="baseNum" name="baseNum" min="1" max="10">
+    </div>
+    <!-- SCALE -->
+    <div class ="variableBox">
+        <label for="scale">Scale <drg-num>(1-50):</drg-num></label>
+        <input type="number" id="scale" name="scale" min="1" max="50">
+    </div>
+    <!-- SHAPE SIZE -->
+    <div class ="variableBox">
+        <label for="shapeSize">Shape Size <drg-num>(1-100):</drg-num></label>
+        <input type="number" id="shapeSize" name="shapeSize" min="1" max="100">
+    </div>
+    <!-- SHAPE BORDER THICKNESS -->
+    <div class ="variableBox">
+        <label for="borderThickness">Border Thickness <drg-num>(1-30):</drg-num></label>
+        <input type="number" id="borderThickness" name="borderThickness" min="1" max="30">
+    </div>
+    <!-- MULTIPLIER -->
+    <div class ="variableBox">
+        <label for="multiplier">Multiplier <drg-num>(1-20):</drg-num></label>
+        <input type="number" id="multiplier" name="multiplier" min="1" max="20">
+    </div>
+    <!-- FILL COLOUR HUE -->
+    <div class ="variableBox">
+        <label for="fillHue">Fill Number <drg-num>(0-255):</drg-num></label>
+        <input type="number" id="fillHue" name="fillHue" min="0" max="255">
+    </div>
+    <!-- BORDER COLOUR HUE -->
+    <div class ="variableBox">
+        <label for="borderHue">Border Hue <drg-num>(0-255):</drg-num></label>
+        <input type="number" id="borderHue" name="borderHue" min="0" max="255">
+    </div>
+    <!-- TRANSPARENCY -->
+    <div class ="variableBox">
+        <label for="transparency">Transparency <drg-num>(0-1):</drg-num></label>
+        <input type="number" id="transparency" name="transparency" step= "0.1" min="0" max="1">
+    </div>
+    <!-- TOTAL NUMBER OF FRAME RENDERS -->
+    <div class ="variableBox">
+        <label for="maxFrames">Total Renders <drg-num>(1-800):</drg-num></label>
+        <input type="number" id="maxFrames" name="maxFrames" min="1" max="800">
+    </div>
+
+    <button id ="applyButton" onclick="applyNewValues()">APPLY VALUES</button>
+    </div>
+
+<!-- FIBONACCI FLOWER WINDOW -->
+    <canvas id="canvas1"></canvas>
+
+    <script src="script.js"></script>
+</body>
+</html>
